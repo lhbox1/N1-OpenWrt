@@ -30,6 +30,10 @@ git clone --depth=1 https://github.com/gdy666/luci-app-lucky.git package/lucky
 # Remove packages
 #删除lean库中的插件，使用自定义源中的包。
 
+##添加软件包
+git clone https://github.com/lhbox1/luci-app-adguardhome1 package/luci-app-adguardhome
+
+
 #删除冲突插件
 #rm -rf $(find ./feeds/luci/ -type d -regex ".*\(argon\|design\|openclash\|passwall\|ssr-plus\|smartdns\).*")
 
