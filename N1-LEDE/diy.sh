@@ -29,6 +29,27 @@ git clone --depth=1 https://github.com/gdy666/luci-app-lucky.git package/lucky
 #git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-ddns-go
 # Remove packages
 #删除lean库中的插件，使用自定义源中的包。
+
+#删除冲突插件
+#rm -rf $(find ./feeds/luci/ -type d -regex ".*\(argon\|design\|openclash\|passwall\|ssr-plus\|smartdns\).*")
+
+rm -rf $(find ./feeds/luci/ -type d -regex ".*\(passwall\|openclash\|ksmbd\|alist\|easymesh\|adguardhome\|lucky\|wechatpush\|ddns-go\|ssr-plus\).*")
+#passwall
+rm -rf feeds/packages/net/sing-box
+rm -rf feeds/packages/net/trojan-plus
+rm -rf feeds/packages/net/chinadns-ng
+rm -rf feeds/packages/net/xray-core
+rm -rf feeds/packages/net/hysteria
+##
+rm -rf feeds/packages/net/adguardhome
+rm -rf package/istore
+rm -rf feeds/packages/net/lucky
+
+rm -rf feeds/packages/net/alist
+
+
+
+
 rm -rf feeds/packages/net/v2ray-geodata
 rm -rf feeds/luci/themes/luci-theme-argon
 rm -rf feeds/luci/applications/luci-app-argon-config
