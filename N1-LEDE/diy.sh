@@ -33,7 +33,7 @@ git clone --depth=1 https://github.com/gdy666/luci-app-lucky.git package/lucky
 #删除冲突插件
 #rm -rf $(find ./feeds/luci/ -type d -regex ".*\(argon\|design\|openclash\|passwall\|ssr-plus\|smartdns\).*")
 
-rm -rf $(find ./feeds/luci/ -type d -regex ".*\(passwall\|openclash\|ksmbd\|alist\|easymesh\|adguardhome\|lucky\|wechatpush\|ddns-go\|ssr-plus\).*")
+rm -rf $(find ./feeds/luci/ -type d -regex ".*\(passwall\|openclash\|alist\|easymesh\|adguardhome\|lucky\|wechatpush\|ddns-go\|ssr-plus\).*")
 #passwall
 rm -rf feeds/packages/net/sing-box
 rm -rf feeds/packages/net/trojan-plus
