@@ -66,4 +66,4 @@ sed -i 's/192.168.1.1/192.168.15.99/g' package/base-files/files/bin/config_gener
 #修改默认主机名
 sed -i "s/hostname='.*'/hostname='N1'/g" ./package/base-files/files/bin/config_generate
 #修改默认时间格式
-sed -i 's/os.date()/os.date("%Y-%m-%d %H:%M:%S %A")/g' $(find ./package/*/autocore/files/ -type f -name "index.htm")
+sed -i 's/os.date()/os.date("%Y-%m-%d %H:%M:%S")/g' $(find ./package/*/autocore/files/ -type f -name "index.htm")
