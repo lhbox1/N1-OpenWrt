@@ -23,7 +23,6 @@ git clone --depth=1 --single-branch --branch "master" https://github.com/verneso
 
 git clone -b v5-lua --single-branch --depth 1 https://github.com/sbwml/luci-app-mosdns package/mosdns
 git clone -b lua --single-branch --depth 1 https://github.com/sbwml/luci-app-alist package/alist
-git clone --depth=1 https://github.com/gdy666/luci-app-lucky.git package/lucky
 #添加自定义的软件包源
 #git_sparse_clone main https://github.com/kiddin9/kwrt-packages ddns-go
 #git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-ddns-go
@@ -48,7 +47,6 @@ rm -rf feeds/packages/net/hysteria
 rm -rf feeds/packages/net/adguardhome
 rm -rf package/istore
 rm -rf feeds/packages/net/lucky
-
 rm -rf feeds/packages/net/alist
 
 
