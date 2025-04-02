@@ -124,7 +124,7 @@ jobs:
       run: |
         [ -e $FILES IG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x $DIY_SH
-        chmod +x $DIY_SH
+        chmod +x $DIY_SH2
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_SH
         $GITHUB_WORKSPACE/$DIY_SH2
