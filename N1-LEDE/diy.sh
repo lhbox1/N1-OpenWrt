@@ -34,7 +34,7 @@ git clone https://github.com/lhbox1/luci-app-adguardhome1 package/luci-app-adgua
 
 
 #删除冲突插件
-rm -rf $(find ./feeds/packages/net/ -type d -regex ".*\(dns2socks\|geoview\|ipt2socks\|microsocks\|naiveproxy\|shadowsocks-rust\|shadowsocksr-libev\|simple-obfs\|tcping\|tuic-client\|v2ray-plugin\|xray-plugin\).*")
+rm -rf $(find ./feeds/packages/net/ -type d -regex ".*\(dns2socks\|geoview\|ipt2socks\|microsocks\|naiveproxy\|shadowsocks-rust\|shadowsocksr-libev\|shadowsocks-libev\|simple-obfs\|tcping\|tuic-client\|v2ray-plugin\|xray-plugin\).*")
 
 rm -rf $(find ./feeds/luci/ -type d -regex ".*\(passwall\|openclash\|alist\|easymesh\|adguardhome\|lucky\|wechatpush\|ddns-go\|ssr-plus\).*")
 #passwall
